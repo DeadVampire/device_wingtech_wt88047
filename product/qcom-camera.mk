@@ -1,7 +1,7 @@
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
-    camera.device@3.2-impl \
+    camera.device@1.0-impl \
     camera.msm8916 \
     libmm-qcamera \
     libshim_camera \
@@ -14,6 +14,7 @@ PRODUCT_COPY_FILES += \
 
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
+    camera.disable_treble=true \
     persist.camera.cpp.duplication=false \
     persist.camera.hal.debug.mask=0 \
     media.stagefright.legacyencoder=true \
